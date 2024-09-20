@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* Elegant font for input, buttons, and output */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap'); /* Elegant font for the title */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #F5F5F0; /* Soft, light background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatbot-container {
+  text-align: center;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbot-title {
+  font-size: 7rem; /* Increase the size for a more dramatic effect */
+  font-weight: 700; /* Bold look */
+  color: #0044cc; /* Matching the blue color */
+  margin: 0;
+  text-transform: lowercase;
+  line-height: 1; /* Make the title tighter */
+}
+
+.chatbot-subtitle {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #0044cc; /* Matching the subtitle blue */
+  margin-top: -20px;
+  text-transform: lowercase;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display */
+  font-size: 1.2rem; /* Elegant larger size */
+}
+
+.chat-button {
+  width: 100%;
+  background-color: #0044cc;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-button:hover {
+  background-color: #003399;
+}
+
+.answer {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display to the output */
+  font-size: 1.2rem; /* Larger font size for the answer */
+  color: #444;
+}
+
+.answer pre {
+  white-space: pre-wrap;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display to the preformatted output text */
+  font-size: 1.2rem; /* Keep the same font size as the answer container */
+}
